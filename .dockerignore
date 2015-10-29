@@ -1,0 +1,6 @@
+.git
+.gitignore
+README.md
+Dockerfile
+run-docker.sh
+Installation Guide.txt
