@@ -1,0 +1,13 @@
+=== Saga-in-Docker Installation Guide ===
+
+Experimental docker build for Saga. To be used for testing only, not production usage (security would have to be considered to make this production ready).
+
+Provides a self-contained environment for Saga development and testing.
+
+Currently based on x86-64 debian. Could easily be ported to other archs by changing the base image in Dockerfile. Porting to other GNU/Linux flavours requires more work as the setup scripts use debian packages through apt-get.
+
+How to use
+* Install docker for your host OS: https://docs.docker.com/installation/
+* Run ./run-docker.sh
+
+Note that the first run will take some time since it has to set up the image from scratch. Subsequent runs are quick since it will use a cached image.
