@@ -1,4 +1,4 @@
-FROM armbuild/debian
+FROM debian
 
 ENV DEBIAN_FRONTEND noninteractive
 
