@@ -1,9 +1,11 @@
 #!/bin/bash
 
+set -eu
+
 cp /saga/Site/application/config/database.php /saga/Site/application/config/development/
 cp /saga/Docker/saga.conf /etc/apache2/sites-available
 
-chown -R www-data /saga/Site/public
+chown -R www-data /saga
 
 a2dissite 000-default
 a2ensite saga
