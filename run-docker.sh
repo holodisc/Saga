@@ -4,4 +4,4 @@ set -eu
 
 docker build --tag saga .
 
-docker run -it saga /saga/Docker/setup.sh
+docker run -h 'saga-test' -it saga /saga/Docker/setup.sh
