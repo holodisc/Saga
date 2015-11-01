@@ -10,6 +10,7 @@ RUN apt-get update
 # Requires packages
 RUN apt-get install -y mysql-server
 RUN apt-get install -y libapache2-mod-php5
+RUN apt-get install -y php5-mysql
 
 # Useful stuff
 RUN apt-get install -y curl vim
