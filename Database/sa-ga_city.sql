@@ -487,7 +487,7 @@ CREATE TABLE IF NOT EXISTS `bf_roles` (
 
 INSERT INTO `bf_roles` (`role_id`, `role_name`, `description`, `default`, `can_delete`, `login_destination`, `deleted`, `default_context`) VALUES
 (1, 'Administrator', 'Has full control over every aspect of the site.', 0, 0, '', 0, 'content'),
-(2, 'Editor', 'Can handle day-to-day management, but does not have full power.', 0, 1, 'http://sa-ga.city/admin/embeds/templates', 0, 'content'),
+(2, 'Editor', 'Can handle day-to-day management, but does not have full power.', 0, 1, '/admin/embeds/templates', 0, 'content'),
 (4, 'User', 'This is the default user with access to login.', 1, 0, '', 0, 'content'),
 (6, 'Developer', 'Developers typically are the only ones that can access the developer tools. Otherwise identical to Administrators, at least until the site is handed off.', 0, 1, '', 0, 'content');
 
