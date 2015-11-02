@@ -17,10 +17,8 @@ Note that the first run will take some time since it has to set up the image fro
 
 == Hostname ==
 
-By default, Saga will assume that it's reached through the hostname 'saga-test'. When testing, this could easily be achieved by editing the hosts
-file (i.e /etc/hosts) of the OS hosting the docker container and adding an entry 'ip_of_container saga-test', for example:
+By default, Saga will assume that it's reached through the IP of the container.
+If a different hostname is desired, edit Site/application/config/config.php and modify the $config['base_url'] value i.e
 
-172.17.0.100 saga-test
-
-If a different hostname is desired, edit Site/application/config/config.php and modify the $config['base_url'] value.
+$config['base_url'] = "http://my-saga-site/";
 
