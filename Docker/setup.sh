@@ -13,8 +13,8 @@ a2dissite 000-default
 a2ensite saga
 a2enmod rewrite
 
-service mysql start
-service apache2 start
+service mysql restart
+service apache2 restart
 
 echo 'CREATE DATABASE `sa-ga.city`;' | mysql --user=root --password=mysql
 
