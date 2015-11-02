@@ -7,6 +7,8 @@ cp /saga/Docker/saga.conf /etc/apache2/sites-available
 
 chown -R www-data /saga
 
+chmod 755 /saga/Site/public
+
 a2dissite 000-default
 a2ensite saga
 a2enmod rewrite
