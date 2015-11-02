@@ -6,8 +6,21 @@ Provides a self-contained environment for Saga development and testing.
 
 Currently based on x86-64 debian. Could easily be ported to other archs by changing the base image in Dockerfile. Porting to other GNU/Linux flavours requires more work as the setup scripts use debian packages through apt-get.
 
-How to use
+
+== How to use ==
+
 * Install docker for your host OS: https://docs.docker.com/installation/
 * Run ./run-docker.sh
 
 Note that the first run will take some time since it has to set up the image from scratch. Subsequent runs are quick since it will use a cached image.
+
+
+== Hostname ==
+
+By default, Saga will assume that it's reached through the hostname 'saga-test'. When testing, this could easily be achieved by editing the hosts
+file (i.e /etc/hosts) of the OS hosting the docker container and adding an entry 'ip_of_container saga-test', for example:
+
+172.17.0.100 saga-test
+
+If a different hostname is desired, edit Site/application/config/config.php and modify the $config['base_url'] value.
+
